@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="/favicon.svg"><title>Exact Score Predictions: Why ~10% Hit Rate Is Strong</title><link rel="icon" href="https://www.winpred.com/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="https://www.winpred.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://www.winpred.com/favicon-16x16.png"><link rel="stylesheet" href="/styles/blog.css"></head> <body> <!-- Header --> <header class="appbar"> <div class="toolbar"> <button class="burger" aria-label="Open menu" data-open-drawer> <span></span><span></span><span></span> </button> <nav class="nav" aria-label="Main"> <a href="https://www.winpred.com/">Home</a> <a href="https://www.winpred.com/upcoming">Upcoming</a> <a href="https://www.winpred.com/recent">Recent</a> <a href="https://www.winpred.com/about">About Us</a> <a class="active" href="/">Blog</a> </nav> </div> </header> <!-- Mobile drawer --> <div class="drawer" data-drawer> <div class="panel" role="dialog" aria-label="Menu"> <nav class="nav"> <a href="https://www.winpred.com/">Home</a> <a href="https://www.winpred.com/upcoming">Upcoming</a> <a href="https://www.winpred.com/recent">Recent</a> <a href="https://www.winpred.com/about">About Us</a> <a href="/">Blog</a> </nav> </div> </div> <!-- Page content --> <main class="container">  <article class="post-content"> <h1>Exact Score Predictions: Why ~10% Hit Rate Is Strong</h1> <p class="date">August 3, 2025</p> <p>Predicting the <strong>exact final score</strong> is a different beast than picking 1X2. Depending on the league and goal environment, the plausible score set contains <strong>15–25 outcomes</strong> (0‑0, 1‑0, 2‑0, 2‑1, 1‑1, 0‑1, …). A flat random pick lands near <strong>4–6%</strong>. Sustaining <strong>~10%</strong> over a large sample is roughly <strong>2× the random baseline</strong> and compares favorably to most public models.</p>
+<h2 id="how-we-do-it">How we do it</h2>
+<p>We do not guess scores directly. We model <strong>goal distributions</strong> for each side with:</p>
+<ul>
+<li>Expected goals (xG) adjusted for opponent quality.</li>
+<li>Shot volume and shot quality splits (open play vs set pieces).</li>
+<li>Styles that inflate variance (high press, transition heavy) vs dampen it (compact low blocks).</li>
+<li>Rest, travel and rotation risks which shift expected production.</li>
+</ul>
+<p>From those, we simulate game states and read off the <strong>modal score</strong> (most probable) plus the <strong>top‑k alternatives</strong>.</p>
+<h2 id="when-to-use-and-when-not">When to use (and when not)</h2>
+<ul>
+<li>Use exact scores for <strong>small, tactical stakes</strong>—they are volatile.</li>
+<li>Favor matches with <strong>clear style asymmetry</strong> (e.g., elite attack vs passive defense).</li>
+<li>Avoid low‑information spots: heavy rotation, cup ties with unknown lineups, or derbies with inflated variance.</li>
+</ul>
+<h2 id="linking-to-other-markets">Linking to other markets</h2>
+<p>Exact scores sing when combined with <strong>1X2</strong> and <strong>totals</strong>:</p>
+<ul>
+<li>If we favor <strong>Home + Under 2.5</strong>, the mode often clusters around <strong>1‑0 / 2‑0</strong>.</li>
+<li>If we like <strong>Over 3.0</strong>, look to <strong>2‑2 / 3‑1 / 3‑2</strong> ladders.</li>
+</ul>
+<h2 id="calibration-beats-bravado">Calibration beats bravado</h2>
+<p>We publish probabilities, not just a single pick. If we label <strong>1‑0 at 14%</strong>, expect it to land about 14 times per 100 similar games in the long run. That’s how you avoid the illusion of control and keep bankroll discipline.</p>
+<p><strong>Takeaway:</strong> A 10% hit rate is meaningful as long as you size bets conservatively and use score information to guide related markets rather than chase longshots for their own sake.</p> <p class="back"><a href="/">← Back to Blog</a></p> </article>  </main> <footer>
+© 2025 WinPred — All rights reserved.
+</footer> <script src="/scripts/blog.js" type="module"></script> <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-V9EJ0H01E0"></script> <script type="module">window.dataLayer=window.dataLayer||[];function a(){dataLayer.push(arguments)}a("js",new Date);a("config","G-V9EJ0H01E0");</script> <script type="text/javascript">
+      var _iub = _iub || [];
+      _iub.csConfiguration = { "siteId": 4206055, "cookiePolicyId": 55022873, "lang": "en", "storage": { "useSiteId": true } };
+    </script> </body> </html>

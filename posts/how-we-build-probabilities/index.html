@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="/favicon.svg"><title>Under the Hood: How We Build Match Probabilities</title><link rel="icon" href="https://www.winpred.com/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="https://www.winpred.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://www.winpred.com/favicon-16x16.png"><link rel="stylesheet" href="/styles/blog.css"></head> <body> <!-- Header --> <header class="appbar"> <div class="toolbar"> <button class="burger" aria-label="Open menu" data-open-drawer> <span></span><span></span><span></span> </button> <nav class="nav" aria-label="Main"> <a href="https://www.winpred.com/">Home</a> <a href="https://www.winpred.com/upcoming">Upcoming</a> <a href="https://www.winpred.com/recent">Recent</a> <a href="https://www.winpred.com/about">About Us</a> <a class="active" href="/">Blog</a> </nav> </div> </header> <!-- Mobile drawer --> <div class="drawer" data-drawer> <div class="panel" role="dialog" aria-label="Menu"> <nav class="nav"> <a href="https://www.winpred.com/">Home</a> <a href="https://www.winpred.com/upcoming">Upcoming</a> <a href="https://www.winpred.com/recent">Recent</a> <a href="https://www.winpred.com/about">About Us</a> <a href="/">Blog</a> </nav> </div> </div> <!-- Page content --> <main class="container">  <article class="post-content"> <h1>Under the Hood: How We Build Match Probabilities</h1> <p class="date">August 7, 2025</p> <p>Our pipeline has four stages:</p>
+<ol>
+<li><strong>Input modeling</strong></li>
+</ol>
+<ul>
+<li>Player ratings updated with minutes, recency and position.</li>
+<li>Injury &#x26; suspension status, plus likely rotation given congestion.</li>
+<li>Team styles: pressing intensity, directness, width, set‑piece threat.</li>
+</ul>
+<ol start="2">
+<li><strong>Expected production</strong></li>
+</ol>
+<ul>
+<li>Translate inputs into xG/xGA expectations with opponent adjustments.</li>
+<li>Account for rest days and travel distance (fatigue tax).</li>
+</ul>
+<ol start="3">
+<li><strong>Simulation</strong></li>
+</ol>
+<ul>
+<li>Thousands of match simulations using correlated goal models.</li>
+<li>Read off derived markets: 1X2, totals, both teams to score, and <strong>modal scores</strong>.</li>
+</ul>
+<ol start="4">
+<li><strong>Calibration</strong></li>
+</ol>
+<ul>
+<li>Isotonic/Platt scaling per league and per month to align predicted and realized frequencies.</li>
+</ul>
+<p>We do not attempt to “out‑guess” the market news cycle. We systematize how new information flows into the model so that we’re <strong>early enough, often enough</strong>.</p> <p class="back"><a href="/">← Back to Blog</a></p> </article>  </main> <footer>
+© 2025 WinPred — All rights reserved.
+</footer> <script src="/scripts/blog.js" type="module"></script> <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-V9EJ0H01E0"></script> <script type="module">window.dataLayer=window.dataLayer||[];function a(){dataLayer.push(arguments)}a("js",new Date);a("config","G-V9EJ0H01E0");</script> <script type="text/javascript">
+      var _iub = _iub || [];
+      _iub.csConfiguration = { "siteId": 4206055, "cookiePolicyId": 55022873, "lang": "en", "storage": { "useSiteId": true } };
+    </script> </body> </html>
