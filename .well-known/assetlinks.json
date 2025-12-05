@@ -1,0 +1,26 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.winpred.www.twa",
+      "sha256_cert_fingerprints": [
+        "0E:DC:F3:23:51:C7:7A:1B:23:44:6A:5E:8A:C5:FB:06:A2:1D:DA:84:D3:86:33:81:8A:88:57:91:CF:69:EF:CB"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.winpred.www.twa",
+      "sha256_cert_fingerprints": [
+        "0E:DC:F3:23:51:C7:7A:1B:23:44:6A:5E:8A:C5:FB:06:A2:1D:DA:84:D3:86:33:81:8A:88:57:91:CF:69:EF:CB"
+      ]
+    }
+  }
+]
